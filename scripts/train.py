@@ -48,7 +48,7 @@ class Train():  # pylint:disable=too-few-public-methods
         self._stop = False
         self._save_now = False
         self._toggle_preview_mask = False
-        self._refresh_preview = False        
+        self._refresh_preview = False
         self._preview_buffer = dict()
         self._lock = Lock()
 
