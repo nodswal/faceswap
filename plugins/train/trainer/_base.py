@@ -144,6 +144,11 @@ class TrainerBase():
         logger.verbose("Enabled TensorBoard Logging")
         return tensorboard
 
+    def toggle_mask(self):
+        logger.info("Flipping mask display")
+        self._samples._display_mask = not self._samples._display_mask
+
+
     def train_one_step(self, viewer, timelapse_kwargs):
         """ Running training on a batch of images for each side.
 
